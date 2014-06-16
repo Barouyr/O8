@@ -1,6 +1,6 @@
 #!/bin/bash
 ################################################################################
-# Script for Installation: ODOO Saas4/Trunk server on Ubuntu 14.04 LTS
+# Script for Installation: ODOO (formerly OpenERP) server on Ubuntu 14.04 LTS
 # Author: André Schenkels, ICTSTUDIO 2014
 #-------------------------------------------------------------------------------
 #  
@@ -18,15 +18,15 @@
  
 ##fixed parameters
 #openerp
-OE_USER="odoo"
+OE_USER="openerp"
 OE_HOME="/opt/$OE_USER"
 OE_HOME_EXT="/opt/$OE_USER/$OE_USER-server"
 
-#Enter version for checkout "7.0" for version 7.0, "saas-4, saas-5 (opendays version) and "master" for trunk
-OE_VERSION="saas-5"
+#Enter version for checkout "7.0" for version 7.0, "saas-4", "saas-5" (opendays version) and "master" for trunk
+OE_VERSION="7.0"
 
 #set the superadmin password
-OE_SUPERADMIN="superadminpassword"
+OE_SUPERADMIN="superadmin"
 OE_CONFIG="$OE_USER-server"
 
 #--------------------------------------------------
@@ -81,7 +81,7 @@ echo -e "\n---- Setting permissions on home folder ----"
 sudo chown -R $OE_USER:$OE_USER $OE_HOME/*
 
 echo -e "* Create server config file"
-sudo cp $OE_HOME_EXT/setup/debian/openerp-server.conf /etc/$OE_CONFIG.conf
+sudo cp $OE_HOME_EXT/install/openerp-server.conf /etc/$OE_CONFIG.conf
 sudo chown $OE_USER:$OE_USER /etc/$OE_CONFIG.conf
 sudo chmod 640 /etc/$OE_CONFIG.conf
 
