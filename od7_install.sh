@@ -23,7 +23,7 @@ OE_HOME="/opt/$OE_USER"
 OE_HOME_EXT="/opt/$OE_USER/$OE_USER-server"
 
 #Enter version for checkout "7.0" for version 7.0, "saas-4", "saas-5" (opendays version) and "master" for trunk
-OE_VERSION="saas-5"
+OE_VERSION="7.0"
 
 #set the superadmin password
 OE_SUPERADMIN="superadmin"
