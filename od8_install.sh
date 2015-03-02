@@ -98,8 +98,8 @@ sudo chmod 755 $OE_HOME_EXT/start.sh
 
 echo -e "* Install Wkhtmltopdf 0.12.1 *"
 # curl -L to follow mirror redirect from sourceforge.net (eg. kaz.sourceforge.net...)
-sudo wget http://kaz.dl.sourceforge.net/project/wkhtmltopdf/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
-sudo dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb
+sudo wget http://sourceforge.net/projects/wkhtmltopdf/files/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb/download
+sudo dpkg -i wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 sudo cp /usr/local/bin/wkhtmltopdf /usr/bin
 sudo cp /usr/local/bin/wkhtmltoimage /usr/bin
 
